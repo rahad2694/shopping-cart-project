@@ -43,7 +43,8 @@ document.getElementById('cupon-btn').addEventListener('click',function(){
         document.getElementById('total-price').innerText= Number(document.getElementById('total-price').innerText)- Number(document.getElementById('total-price').innerText) * .2;
 
         document.getElementById('cupon-btn').setAttribute('disabled',true);
+        document.getElementById('cupon-success').classList.remove('d-none');
     } else{
-        console.log('wrong!');
+        document.getElementById('cupon-failed').classList.remove('d-none');
     }
 })
