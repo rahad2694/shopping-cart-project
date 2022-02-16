@@ -26,25 +26,25 @@
         <h3 class="text-center"><i class="fas fa-cart-arrow-down"></i> Your Cart <i class="fas fa-cart-plus"></i></h3>
         <div class="container">
             <div class="row">
-                <div class="col-6 col-lg-6 col-md-6 col-sm-6 sol-xs-6 bg-dark text-white py-3">
+                <div class="col-6 col-lg-6 col-md-6 bg-dark text-white py-3">
                     <div class="text-center">
                         <h2 class="text-info mb-3">Items</h2>
-                        <h5>1. Burger with Cheese <i class="fas fa-hamburger"></i> </h5>
-                        <h5>2. Hot-dog with Sausage <i class="fas fa-hotdog"></i></h5>
+                        <h5>1. Burger <i class="fas fa-hamburger"></i> </h5>
+                        <h5>2. Hot-dog <i class="fas fa-hotdog"></i></h5>
                         <h5>3. Hot Coffee <i class="fas fa-mug-hot"></i></h5>
                     </div>
                 </div>
-                    <div class="col-3 col-lg-3 col-md-3 col-sm-3 sol-xs-3 bg-dark text-white py-3">
+                    <div class="col-3 col-lg-3 col-md-3 bg-dark text-white py-3">
                         <div class="text-center">
-                            <h2 class="text-info text-center mb-3">Quantity</h2>
+                            <h2 class="text-info text-center mb-3">Qty</h2>
                             <h5><i id="burger-minus" class="fas fa-minus-circle cursor "></i> <span id="burger-quant"> 0 </span> <i id="burger-plus" class="fas fa-plus-circle cursor"></i></h5>
                             <h5><i id="hot-dog-minus" class="fas fa-minus-circle cursor"></i> <span id="hot-dog-quant"> 0 </span> <i id="hot-dog-plus" class="fas fa-plus-circle cursor"></i></h5>
                             <h5><i id="coffee-minus" class="fas fa-minus-circle cursor"></i> <span id="coffee-quant"> 0 </span> <i id="coffee-plus" class="fas fa-plus-circle cursor"></i></h5>
                             <br>
-                            <h5>TOTAL PRICE =</h5>
+                            <h5>TOTAL</h5>
                         </div>
                     </div>
-                    <div class="col-3 col-lg-3 col-md-3 col-sm-3 sol-xs-3 bg-dark text-white py-3">
+                    <div class="col-3 col-lg-3 col-md-3 bg-dark text-white py-3">
                         <div class="text-center">
                             <h2 class="text-info text-center mb-3">Price</h2>
                             <h5>$<span id="burger-price">00</span></h5>
@@ -70,13 +70,15 @@
                     <p id="cupon-failed" class="text-danger d-none">Wrong Cupon!</p>
                     </div>
             </div>
-            <div class="col-6 col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-2">
-                <div>
-                    <img src="images/payment.png" alt="">
-                    <div class="mt-1 ms-5">
-                    <button class="bg-dark text-white px-5 py-2 rounded">Checkout</button>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-3 d-flex justify-content-center">
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid" src="images/payment.png" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                        <button class="bg-dark text-white px-5 py-2 rounded">Checkout</button>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
