@@ -29,7 +29,7 @@ function updatePriceAndQuant(itemName,targetChangeBox, price,isadd){
 const perBurger = 30;
 const perHotDog = 20;
 const perCoffee = 10;
-const cuponCode = 'PHero';
+const cuponCode = 'phero';
 updatePriceAndQuant('burger','burger-quant',perBurger,true);
 updatePriceAndQuant('burger','burger-quant',perBurger,false);
 updatePriceAndQuant('hot-dog','hot-dog-quant',perHotDog,true);
