@@ -44,7 +44,9 @@ document.getElementById('cupon-btn').addEventListener('click',function(){
 
         document.getElementById('cupon-btn').setAttribute('disabled',true);
         document.getElementById('cupon-success').classList.remove('d-none');
+        document.getElementById('cupon-failed').classList.add('d-none');
     } else{
         document.getElementById('cupon-failed').classList.remove('d-none');
+        document.getElementById('cupon-success').classList.add('d-none');
     }
 })
