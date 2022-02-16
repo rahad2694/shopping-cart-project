@@ -1,4 +1,4 @@
-function changeQuant(itemName,targetChangeBox, price,isadd){
+function updatePriceAndQuant(itemName,targetChangeBox, price,isadd){
     if(isadd){
         document.getElementById(itemName+'-plus').addEventListener('click',function(){
             const targetOutputBox = document.getElementById(targetChangeBox);
@@ -7,6 +7,8 @@ function changeQuant(itemName,targetChangeBox, price,isadd){
             targetOutputBox.innerText = targetOutput;
 
             document.getElementById(itemName+'-price').innerText = targetOutput * price;
+
+            document.getElementById('total-price').innerText = Number(document.getElementById('burger-price').innerText) + Number(document.getElementById('hot-dog-price').innerText) + Number(document.getElementById('coffee-price').innerText);
         })
     }
     else{
@@ -16,8 +18,10 @@ function changeQuant(itemName,targetChangeBox, price,isadd){
             if(targetOutput>0){
                     targetOutput -=1;
                     targetOutputBox.innerText = targetOutput;
-                    
+
                     document.getElementById(itemName+'-price').innerText = targetOutput * price;
+
+                    document.getElementById('total-price').innerText = Number(document.getElementById('burger-price').innerText) + Number(document.getElementById('hot-dog-price').innerText) + Number(document.getElementById('coffee-price').innerText);
                 }
             })
     }
@@ -25,23 +29,9 @@ function changeQuant(itemName,targetChangeBox, price,isadd){
 const perBurger = 30;
 const perHotDog = 20;
 const perCoffee = 10;
-changeQuant('burger','burger-quant',perBurger,true)
-changeQuant('burger','burger-quant',perBurger,false)
-
-changeQuant('hot-dog','hot-dog-quant',perHotDog,true)
-changeQuant('hot-dog','hot-dog-quant',perHotDog,false)
-
-changeQuant('coffee','coffee-quant',perCoffee,true)
-changeQuant('coffee','coffee-quant',perCoffee,false)
-    
-        // if(isadd){
-        //     targetOutput +=1;
-        //     targetOutputBox.innerText = targetOutput;
-
-
-        // } else if(isadd == false && targetOutput>0){
-        //     targetOutput -=1;
-        //     targetOutputBox.innerText = targetOutput;
-        // }
-//     })
-// }
+updatePriceAndQuant('burger','burger-quant',perBurger,true);
+updatePriceAndQuant('burger','burger-quant',perBurger,false);
+updatePriceAndQuant('hot-dog','hot-dog-quant',perHotDog,true);
+updatePriceAndQuant('hot-dog','hot-dog-quant',perHotDog,false);
+updatePriceAndQuant('coffee','coffee-quant',perCoffee,true);
+updatePriceAndQuant('coffee','coffee-quant',perCoffee,false);
