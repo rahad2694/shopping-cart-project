@@ -39,7 +39,7 @@ updatePriceAndQuant('coffee','coffee-quant',perCoffee,false);
 
 document.getElementById('cupon-btn').addEventListener('click',function(){
     const cuponInputBox = document.getElementById('cupon-input');
-    if(cuponInputBox.value === cuponCode){
+    if(cuponInputBox.value.toLowerCase() === cuponCode){
         document.getElementById('total-price').innerText= Number(document.getElementById('total-price').innerText)- Number(document.getElementById('total-price').innerText) * .2;
 
         document.getElementById('cupon-btn').setAttribute('disabled',true);
